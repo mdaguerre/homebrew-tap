@@ -5,21 +5,21 @@
 class GoMetar < Formula
   desc "Command-line tool for fetching METAR aviation weather reports"
   homepage "https://github.com/mdaguerre/go-metar"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mdaguerre/go-metar/releases/download/v1.2.0/go-metar_1.2.0_darwin_amd64.tar.gz"
-      sha256 "a306b06254697abe3af42b5885fb4a2dd0af33db286494ae8ffb453ceb08d6cd"
+      url "https://github.com/mdaguerre/go-metar/releases/download/v1.3.0/go-metar_1.3.0_darwin_amd64.tar.gz"
+      sha256 "142f439d3ded4290e48777964983d6361e4d492e783039003cf1d146bb5378b3"
 
       def install
         bin.install "go-metar"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mdaguerre/go-metar/releases/download/v1.2.0/go-metar_1.2.0_darwin_arm64.tar.gz"
-      sha256 "e848654489e1679c1207d49894a71e38451237b4a272a44da8273303fb9b105b"
+      url "https://github.com/mdaguerre/go-metar/releases/download/v1.3.0/go-metar_1.3.0_darwin_arm64.tar.gz"
+      sha256 "6554109c00a90f80edf69486bc2cde869d1bee031cdab3f622256c418f598fd6"
 
       def install
         bin.install "go-metar"
@@ -29,15 +29,15 @@ class GoMetar < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mdaguerre/go-metar/releases/download/v1.2.0/go-metar_1.2.0_linux_amd64.tar.gz"
-      sha256 "7cead6a14e1c7f9971faa0f151f4a787868be34a5dcb13b1c5156659a2208459"
+      url "https://github.com/mdaguerre/go-metar/releases/download/v1.3.0/go-metar_1.3.0_linux_amd64.tar.gz"
+      sha256 "e7bc9288516d82e521c7206f8405c524ab38d09e820049b38917b7584caa46a1"
       def install
         bin.install "go-metar"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mdaguerre/go-metar/releases/download/v1.2.0/go-metar_1.2.0_linux_arm64.tar.gz"
-      sha256 "ba420e531b330ea1c858d543abd1d6d9b27af3df902aa385fab4b95a1d17c8b2"
+      url "https://github.com/mdaguerre/go-metar/releases/download/v1.3.0/go-metar_1.3.0_linux_arm64.tar.gz"
+      sha256 "78b94e6388a5c59db85b936f78d0e713e636dde09ae5fdae54f3113ae0594d6c"
       def install
         bin.install "go-metar"
       end
